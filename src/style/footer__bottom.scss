@@ -1,0 +1,31 @@
+.footer__bottom{
+  background: #D4D3CD;
+  text-align: center;
+  padding: 50px 152px 26px 141px;
+  &__links {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 50px;
+    column-gap: 10px;
+    & :hover{
+      color: red;
+    }
+  }
+  & a{
+    font-weight: 400;
+    font-size: 15px;
+    color: #000000;
+  }
+  & p{
+    color: #424242;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  &-img{
+    width: 100%;
+  }
+}

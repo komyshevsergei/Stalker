@@ -1,0 +1,32 @@
+.header__bottom{
+  background: #D4D3CD;
+  padding: 20px 20px;
+  &-links {
+
+    display: flex;
+    justify-content: center;
+    column-gap: 17px;
+
+    & :hover{
+      color: darkred;
+    }
+    @media (max-width: 680px) {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  a {
+    position: relative;
+    font-size: 15px;
+    font-weight: 600;
+    color: #2D2D2F;
+    a ::before{
+      content: '';
+      position: absolute;
+      border: 3px solid black;
+      bottom: 0;
+      left: 0;
+    }
+  }
+}

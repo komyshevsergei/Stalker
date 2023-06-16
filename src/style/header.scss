@@ -1,0 +1,36 @@
+.header{
+  padding: 19px 34px 19px 22px;
+  background: #242324;
+  &__nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__link{
+    padding: 0 57px 0 21px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #D4D3CD;
+    @media (max-width: 680px) {
+      display: none;
+    }
+  }
+  &__logo{
+    padding-right: 160px;
+    @media (max-width: 995px) {
+      padding-right: 0;
+    }
+  }
+  &__tel{
+    color: #D4D3CD;
+    @media (max-width: 995px) {
+      display: none;
+    }
+  }
+  &__right{
+     display: flex;
+     column-gap: 27px;
+    cursor: pointer;
+  }
+}
+

@@ -1,0 +1,23 @@
+.map{
+  padding-top: 100px;
+  @media (max-width: 900px) {
+    padding-top: 0;
+  }
+  &__location{
+    position: relative;
+  }
+  &__img{
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+  }
+  & span svg{
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    @media (max-width: 900px) {
+      width: 40px;
+      height: 80px;
+    }
+  }
+}

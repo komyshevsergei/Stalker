@@ -1,0 +1,90 @@
+.products{
+  padding: 56px 104px;
+  &__flex{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+  }
+  &__img-card{
+    position: relative;
+    display: flex;
+    margin: 30px;
+    @media (max-width: 1230px) {
+      flex-wrap: wrap;
+    }
+  }
+  &__title{
+    font-family: 'Disket Mono',sans-serif;
+    font-style: normal;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #242324;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 49px;
+  }
+  &__cards-title{
+    position: absolute;
+    top: 26px;
+    left: 13px;
+    font-family: 'Karla', sans-serif;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #242324;
+  }
+  &__cards-btn{
+    position: absolute;
+    left: 60px;
+    bottom: 22px;
+    padding: 14px 28px;
+    font-family: 'Disket Mono';
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    background: #8D7641;
+    border: #8D7641;
+    cursor: pointer;
+  }
+  &__cards{
+    display: flex;
+    justify-content: space-around;
+    column-gap: 20px;
+    flex-wrap: wrap;
+
+    @media (max-width: 1206px) {
+      column-gap: 20px;
+    }
+  }
+  &__arrows{
+    display: flex;
+    align-items: center;
+    column-gap: 44px;
+    margin-bottom: 30px;
+  }
+  &__arrow{
+    display: flex;
+    color: #FFFFFF;
+    font-size: 16px;
+    column-gap: 20px;
+    align-items: center;
+    cursor: pointer;
+  }
+  &__swiper{
+    display: flex;
+    justify-content: space-around;
+    column-gap: 10px;
+    flex-wrap: wrap;
+    @media (max-width: 1206px) {
+      column-gap: 20px;
+    }
+  }
+}
+.swiper-wrapper{
+  display: flex;
+  column-gap: 10px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+

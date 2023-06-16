@@ -1,0 +1,54 @@
+.home{
+  &__info{
+    position: absolute;
+    top: 50%;
+    left: 18%;
+    @media (max-width: 580px) {
+      display: none;
+    }
+    @media (max-width: 900px) {
+      top: 18%;
+    }
+    @media (max-width: 1300px) {
+      top: 38%;
+    }
+  }
+  &__img{
+    position: relative;
+    height: 855px;
+    background-position: center;
+    width: 100%;
+    background-size: cover;
+    object-fit: cover;
+    @media (max-width: 768px) {
+         height: 455px;
+      }
+    @media (max-width: 1308px) {
+      height: auto;
+    }
+  }
+  &__title{
+    font-family: 'Capture it', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 96px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    @media (max-width: 1306px) {
+      font-size: 56px;
+    }
+    @media (max-width: 821px) {
+      font-size: 36px;
+    }
+  }
+  &__text{
+    margin-bottom: 38px;
+    font-size: 40px;
+    text-align: center;
+    color: #FFFFFF;
+    @media (max-width: 821px) {
+      font-size: 26px;
+    }
+  }
+}

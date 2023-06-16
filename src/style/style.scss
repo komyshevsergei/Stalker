@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@700&family=Open+Sans:wght@300;400;600;700&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.container{
+  max-width: 1393px;
+  margin: 0 auto;
+}
+
+body{
+  background: #D4D3CD;
+}
+
+ul, li {
+  cursor: pointer;
+}
+
+//font-family: 'Karla', sans-serif;
+//font-family: 'Open Sans', sans-serif;
+
+
+@import"header";
+@import "header__bottom";
+@import "home";
+@import "products";
+@import "map";
+@import "footer";
+@import "footer__bottom";
