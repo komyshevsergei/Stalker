@@ -7,8 +7,19 @@
     justify-content: space-around;
     padding-bottom: 50px;
     column-gap: 10px;
+    @media (max-width: 680px) {
+      padding-bottom: 10px;
+      flex-wrap: wrap;
+    }
     & :hover{
       color: red;
+    }
+  }
+  &-img {
+    width: 100%;
+    @media (max-width: 680px) {
+      width: 195px;
+      height: 27px;
     }
   }
   & a{
