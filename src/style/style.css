@@ -21,6 +21,10 @@ body {
   background: #D4D3CD;
 }
 
+img {
+  border-radius: 12px;
+}
+
 ul, li {
   cursor: pointer;
 }
@@ -104,7 +108,7 @@ ul, li {
   top: 50%;
   left: 18%;
 }
-@media (max-width: 580px) {
+@media (max-width: 520px) {
   .home__info {
     display: none;
   }
@@ -171,6 +175,11 @@ ul, li {
 .products {
   padding: 56px 104px;
 }
+@media (max-width: 680px) {
+  .products {
+    padding-top: 19px;
+  }
+}
 .products__flex {
   display: flex;
   justify-content: space-between;
@@ -179,7 +188,6 @@ ul, li {
 .products__img-card {
   position: relative;
   display: flex;
-  margin: 30px;
 }
 @media (max-width: 1230px) {
   .products__img-card {
@@ -196,6 +204,11 @@ ul, li {
   margin: 0 auto;
   padding-bottom: 49px;
 }
+@media (max-width: 680px) {
+  .products__title {
+    padding-bottom: 19px;
+  }
+}
 .products__cards-title {
   position: absolute;
   top: 26px;
@@ -204,6 +217,9 @@ ul, li {
   font-style: normal;
   text-transform: uppercase;
   color: #242324;
+}
+.products__cards-title:hover {
+  color: darkred;
 }
 .products__cards-btn {
   position: absolute;
@@ -218,6 +234,11 @@ ul, li {
   background: #8D7641;
   border: #8D7641;
   cursor: pointer;
+  border-radius: 10px;
+}
+.products__cards-btn:hover {
+  color: #424242;
+  background: #33B7BC;
 }
 .products__cards {
   display: flex;
@@ -229,20 +250,6 @@ ul, li {
   .products__cards {
     column-gap: 20px;
   }
-}
-.products__arrows {
-  display: flex;
-  align-items: center;
-  column-gap: 44px;
-  margin-bottom: 30px;
-}
-.products__arrow {
-  display: flex;
-  color: #FFFFFF;
-  font-size: 16px;
-  column-gap: 20px;
-  align-items: center;
-  cursor: pointer;
 }
 .products__swiper {
   display: flex;
@@ -258,7 +265,7 @@ ul, li {
 
 .swiper-wrapper {
   display: flex;
-  column-gap: 10px;
+  gap: 10px;
   flex-wrap: wrap;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -370,8 +377,23 @@ ul, li {
   padding-bottom: 50px;
   column-gap: 10px;
 }
+@media (max-width: 680px) {
+  .footer__bottom__links {
+    padding-bottom: 10px;
+    flex-wrap: wrap;
+  }
+}
 .footer__bottom__links :hover {
   color: red;
+}
+.footer__bottom-img {
+  width: 100%;
+}
+@media (max-width: 680px) {
+  .footer__bottom-img {
+    width: 195px;
+    height: 27px;
+  }
 }
 .footer__bottom a {
   font-weight: 400;
